@@ -39,8 +39,8 @@ DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 SECRET_KEY = '^d1h4-9e$x9+c21323n+hzg-f8b=mv__^v^o=y#0=0ddc#pz$v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = os.environ.get("DEBUG", "False").lower() in ['true', '1', 't']
+DEBUG = True
+#DEBUG = os.environ.get("DEBUG", "False").lower() in ['true', '1', 't']
 
 
 #ALLOWED_HOSTS = ['db2079b7.ngrok.io', 'localhost']
@@ -110,10 +110,11 @@ USE_TZ = True
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+# Static files (CSS, JavaScript, Images)
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-#STATICFILES_DIRS = (
-#    os.path.join(PROJECT_ROOT, 'static'),
-#)
-
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
