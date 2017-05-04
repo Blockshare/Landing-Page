@@ -43,8 +43,8 @@ SECRET_KEY = '^d1h4-9e$x9+c21323n+hzg-f8b=mv__^v^o=y#0=0ddc#pz$v'
 DEBUG = os.environ.get("DEBUG", "False").lower() in ['true', '1', 't']
 
 
-ALLOWED_HOSTS = ['db2079b7.ngrok.io', 'localhost']
-
+#ALLOWED_HOSTS = ['db2079b7.ngrok.io', 'localhost']
+ALLOWED_HOSTS = [".herokuapp.com"]
 
 # Application definition
 
