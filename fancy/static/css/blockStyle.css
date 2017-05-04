@@ -63,7 +63,7 @@ li {
 }
 body {
 	font: normal 75% Arial, Helvetica, sans-serif;
-	/*background: url("..imgdarkbg.jpg") no-repeat #0a0d0f; */
+        background: url("../img/darkbg.jpg") no-repeat #0a0d0f;
 	color: #fff
 }
 body, html {
@@ -71,6 +71,8 @@ body, html {
 }
 @font-face {
 	font-family: 'DINPro-Light';
+	src: url("fonts/DINPro-Light.eot");
+	src: local("â˜º"), url("fonts/DINPro-Light.ttf") format("truetype"), url("fonts/DINPro-Light.svg") format("svg");
 	font-weight: normal;
 	font-style: normal
 }
@@ -97,20 +99,18 @@ body, html {
 }
 h1 {
 	width: 400px;
-	height: 20px;
-	/*text-indent: -999999px; */
-	margin-bottom: 10px;
-        font-family: 'DINPro-Light', Arial;
-        font-size: 2.1em;
-        line-height: 1.4em;
-        cursor: default
-
+	height: 30px;
+        font-size: 25px;
+	margin-bottom: 10px
 }
 h2 {
 	height: 26px;
 	text-indent: -999999px
 }
 @media (-webkit-min-device-pixel-ratio: 1.75), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	h1 {
+		background-size: cover
+	}
 	html[lang="fr"] h2 {
 		background-size: 397px
 	}

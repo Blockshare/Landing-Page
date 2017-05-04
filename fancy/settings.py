@@ -43,8 +43,8 @@ DEBUG = True
 #DEBUG = os.environ.get("DEBUG", "False").lower() in ['true', '1', 't']
 
 
-#ALLOWED_HOSTS = ['db2079b7.ngrok.io', 'localhost']
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = ['d02f13f8.ngrok.io', 'localhost']
+#ALLOWED_HOSTS = [".herokuapp.com"]
 
 # Application definition
 
